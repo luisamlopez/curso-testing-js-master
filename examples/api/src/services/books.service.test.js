@@ -38,7 +38,7 @@ describe('Test for BooksService', () => {
       const books = await service.getBooks();
       expect(books.length).toEqual(8);// ya no es la info de la bd sino la fake
       expect(mockGetAll).toHaveBeenCalled();
-      expect(mockGetAll).toHaveBeenCalledTimes(2);
+      expect(mockGetAll).toHaveBeenCalledTimes(2);// se llama dos veces
     });
   });
 });
